@@ -9,8 +9,8 @@ function playAudio() {
 
 function timer() {
     // https://www.w3schools.com/howto/howto_js_countdown.asp
-    let date = new Date("June 30, 2023 16:03").getTime();
-    let now = new Date().getTime();
+    let date = new Date("June 30, 2023 16:03").getTimezoneOffset();
+    let now = new Date().getTimezoneOffset();
     let distance = date - now;
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
